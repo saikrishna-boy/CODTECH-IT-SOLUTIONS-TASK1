@@ -1,7 +1,7 @@
 Name: Adapa Saikrishna
 
 
-Company: CODTECH II SOLUTIONS
+Company: CODTECH IT SOLUTIONS
 
 
 ID: CT06IOT356
