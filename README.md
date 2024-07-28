@@ -1,11 +1,27 @@
 Name: Adapa Saikrishna
+
+
 Company: CODTECH II SOLUTIONS
+
+
 ID: CT06IOT356
+
+
 Domain: Internet Of Things
+
+
 Duration: June to July 2024
+
+
 Mentor: G.Sravani
+
+
 Overview of the project
+
+
 Project: Smart Home Automation System
+
+
 
 
 Objective: The objective of this project to make basic Iot-based smart home system that allows users to control home appliances using a mobile app.
