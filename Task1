@@ -1,0 +1,39 @@
+ #include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+
+const char* ssid = "YourWiFiSSID";
+const char* password = "YourWiFiPassword";
+const char* host = "api.yourserver.com"; 
+
+WiFiClient client;
+
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  if (client.connect(host, 80)) {
+    Serial.println("Connected to server");
+    client.stop(); // Close connection
+  } else {
+    Serial.println("Connection to server failed");
+  }
+
+  delay(10000); // Check for commands every 10 seconds
+}
+
