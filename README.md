@@ -25,6 +25,8 @@ Project: Smart Home Automation System
 
 
 Objective: The objective of this project to make basic Iot-based smart home system that allows users to control home appliances using a mobile app.
+
+
 Key Activities:
  1. System Design and Planning.
  2. Hardware Selection
